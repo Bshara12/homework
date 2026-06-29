@@ -1,60 +1,38 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <title>My Personal Page</title>
+    <title>بطاقة منتج احترافي</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- الاسم الكامل -->
-    <h1>Bshara alhatem</h1>
+    <div class="page-wrapper">
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+          alt="سماعات رأس لاسلكية احترافية"
+          class="product-img"
+        />
 
-    <!-- عنوان فرعي -->
-    <h2>
-      i am a fullstak engineer in fif'th year in Damascus un
-    </h2>
+        <div class="product-content">
+          <h1 class="product-title">سماعة Quantum X</h1>
+          <p class="product-desc">
+            استمتع بتجربة صوتية محيطية خارقة مع ميزة عزل الضوضاء الفائق وعمر
+            بطارية يدوم حتى 40 ساعة متواصلة.
+          </p>
 
-    <!-- فقرة تعريفية -->
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium atque
-      perspiciatis eos? <br> Quo, <strong><em>incidunt</em></strong> doloremque quasi minus ut velit neque
-      alias modi, sapiente repellat eos. Maiores ad culpa tempore velit.
-    </p>
+          <div class="product-tags">
+            <span class="tag">لاسلكي</span>
+            <span class="tag">محيطي 7.1</span>
+            <span class="tag">شحن سريع</span>
+          </div>
 
-    <!-- قائمة المهارات -->
-    <h3>مهاراتي</h3>
-    <ul>
-      <li>البرمجة بلغة PHP</li>
-      <li>Laravel Framework</li>
-      <li>حل المشكلات</li>
-      <li>العمل الجماعي</li>
-      <li>التعلم السريع</li>
-    </ul>
-
-    <!-- قائمة مرتبة للأهداف -->
-    <h3>أهم 5 أهداف عندي</h3>
-    <ol>
-      <li>أن أصبح Software Engineer محترف</li>
-      <li>اخلص الكورس عخير و سلامة</li>
-      <li>اتخرج</li>
-      <li>ية شي</li>
-      <li>ثاني اية شي</li>
-    </ol>
-
-    <!-- صورة -->
-    <h3>فريقي المفضل</h3>
-    <img
-      src="data:image/png;base64,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"
-      alt="My Image"
-    />
-
-    <!-- رابط -->
-    <h3>دور عفريقي المفضل</h3>
-    <a href="https://www.google.com" target="_blank">cklick</a>
-
-    <!-- معلومات التواصل -->
-    <h3>معلومات التواصل</h3>
-    <p>Email: bshara.h2003@email.com</p>
-    <p>Phone: 0938246910</p>
-    <script src="index.js"></script>
+          <div class="product-footer">
+            <a href="#" class="btn-buy">اشترِ الآن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
